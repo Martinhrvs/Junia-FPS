@@ -1,7 +1,14 @@
 package com.martin;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+import com.martin.juniafps.Map;
+import com.martin.juniafps.Renderer;
 
+public class Main {
+    public static void main(String[] args) throws Exception {
+
+        Map map = new Map(10, 10);
+        Renderer renderer = new Renderer();
+
+        System.out.println(renderer.render(null, 0, map));
+    }
 }
