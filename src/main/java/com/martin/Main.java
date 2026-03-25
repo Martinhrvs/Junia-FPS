@@ -3,12 +3,15 @@ package com.martin;
 import com.martin.juniafps.Map;
 import com.martin.juniafps.Renderer;
 
+import java.awt.*;
+
+
 public class Main {
-    public static void main(String[] args) throws Exception {
-
-        Map map = new Map(10, 10);
+    public static void main(String[] args) {
+        Map map = new Map("map.bmp");
         Renderer renderer = new Renderer();
+        System.out.println(renderer.render(new Point(437, 360), 45, map));
 
-        System.out.println(renderer.render(null, 0, map));
+
     }
 }
