@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         Map map = new Map("map.bmp");
         Renderer renderer = new Renderer();
-        System.out.println(renderer.render(new Point(437, 360), 45, map));
+        System.out.println(renderer.render(new Point(582, 233), 45, map));
 
 
     }
